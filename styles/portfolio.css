@@ -1,8 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*Ensures that elements fit into their containers better.*/
+}
+
 /*header*/ 
 .header{
   background-image: url('../images/developer.png'), url(../images/header_bg.png);
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  /* Use calc() to set precise offsets from the top */
+  background-position: left calc(31px), right calc(312px);
+  /*You’re explicitly setting a vertical offset (31px or 312px from the top) while leaving the horizontal alignment (left or right) intact.*/
 }
 
 /*Nav Style*/
@@ -10,7 +19,7 @@ nav{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: 50px 220px;
+   padding: 42px 220px;
 }
 
 .open-sans-normal{
@@ -32,6 +41,7 @@ nav{
 .text-primary{
     color: #FD6E0A;
 }
+
 .btn-primary{
     background-color: #FD6E0A;
     font-size: 20px;
@@ -71,6 +81,12 @@ nav ul{
 .section-description{
     font-size: 18px;
     color: #757575;
+    margin:40px 0px;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* Banner Styles */
@@ -81,8 +97,9 @@ nav ul{
  }
 
  .banner-content{
-    width: 585px;
-    height: 356px;
+    max-width: 585px;
+    padding: 180px  0px 100px 0px;
+    /* max-height: 356px; */
  }
 
 .banner-greetings{
@@ -94,13 +111,48 @@ nav ul{
     font-size: 85px;
     font-weight: bold;
 }
+
 .banner-description{
     font-size: 18px;
+    margin: 30px 0px;
  }
 
 .profile-pic{
-    width: 584px;
-    height: 676px;
+    max-width: 584px;
+    /*max-height: 676px;*/
  }
+
+ /*about Styles*/
+ .about{
+    border-radius: 10px;
+    padding: 131px 156px;
+    text-align: center;
+    margin-top: 123px;
+ }
+ .about-bg{
+    background-color: #ffffff; /* white color */
+    max-width: 827px; /* Adjust the width as needed */
+    max-height: 350px;
+    border-radius: 0%;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+ }
+
+ .about-items{
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .about-item{
+    font-size: 20px;
+ }
+
+ .item-description{
+    font-weight: 600;
+ }
+
+
+
 
  
