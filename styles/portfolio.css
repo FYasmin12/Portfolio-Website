@@ -102,6 +102,10 @@ main{
     margin: 0 auto;
 }
 
+main section{
+    margin-top: 123px;
+ }
+
 /* Banner Styles */
 .banner{
     display: flex;
@@ -133,10 +137,6 @@ main{
 .profile-pic{
     max-width: 584px;
     /*max-height: 676px;*/
- }
-
- main section{
-    margin-top: 123px;
  }
 
  /*about Styles*/
