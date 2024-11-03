@@ -34,9 +34,18 @@ nav{
 .secondary-bg{
     background-color: #FFF8F3;
 }
+
+.dark-1{
+   color: #181818;
+}
+
 .dark-2{
     color: #474747;
  }
+
+.dark-3{
+    color: #757575;
+}
 
 .text-primary{
     color: #FD6E0A;
@@ -75,14 +84,18 @@ nav ul{
 .section-title{
     font-size: 35px;
     font-weight: bold;
-    color: #181818; 
+    color: #181818;
 }
 
 .section-description{
     font-size: 18px;
     color: #757575;
-    margin:40px 0px;
+    margin:30px 0px;
 }
+
+.text{
+    text-align: center;
+ }
 
 main{
     max-width: 1140px;
@@ -122,12 +135,15 @@ main{
     /*max-height: 676px;*/
  }
 
+ main section{
+    margin-top: 123px;
+ }
+
  /*about Styles*/
  .about{
     border-radius: 10px;
     padding: 131px 156px;
     text-align: center;
-    margin-top: 123px;
  }
  .about-bg{
     background-color: #ffffff; /* white color */
@@ -152,7 +168,35 @@ main{
     font-weight: 600;
  }
 
+/* What I Do Styles */
+.what-des{
+    padding: 0px 115px 30px;
+}
 
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
 
+.skill{
+    padding: 33px;
+    border-radius: 5;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06); 
+}
+
+.skill-title{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skill-description{
+    font-size: 16px;
+}
+
+/* reume styles */
+.resume-container{
+    display: flex;
+}
 
  
